@@ -1,5 +1,7 @@
 # Quote generator on React using Axios and Animechan API
 
+# Live: https://berdibekovadilet.github.io/quote_generator/
+
 ![Cover](newcover/cover.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
