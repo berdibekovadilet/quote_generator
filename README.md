@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Quote generator on React using Axios and Animechan API
+
+[Cover] (cover.1.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
