@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import "./Main.scss";
+import { FaRedo, FaTwitter } from "react-icons/fa";
 
 const Main = () => {
   const [quote, setQuote] = useState({
@@ -37,9 +38,21 @@ const Main = () => {
         <div className="quote">{quote.quote}</div>
         <div className="character">{quote.character}</div>
       </div>
-      <button className="btn" onClick={generateQuote}>
-        Generate New Quote
-      </button>
+      <div className="buttons">
+        <button className="btn" onClick={generateQuote}>
+          <FaRedo className="icon" />
+          Generate New Quote
+        </button>
+        <a
+          href={`https://twitter.com/intent/tweet?text=${quote.quote}`}
+          target="blank"
+          rel="noopener noreferrer"
+          className="btn twiiter"
+        >
+          <FaTwitter className="icon" />
+          Share to Twitter
+        </a>
+      </div>
     </main>
   );
 };
